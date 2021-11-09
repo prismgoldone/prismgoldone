@@ -38,7 +38,12 @@
 
   gtag('config', 'G-7LE4E6NDYC');
 </script>
-
+	<script>
+if ("serviceWorker" in navigator) {
+  // register service worker
+  navigator.serviceWorker.register("service-worker.js");
+}
+	</script>
 </head>
 
 <body>
