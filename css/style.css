@@ -132,6 +132,90 @@ a:focus {
   font-family: 'Open Sans', sans-serif;
 }
 
+.button-live {
+  background-color: #239B56; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+      -webkit-animation:colorchange 20s infinite alternate;
+    }
+
+    @-webkit-keyframes colorchange {
+      0% {
+        
+		background-color: #196F3D; /* Green */
+      }
+      
+      10% {
+        
+		background-color: darkgreen; /* Green */
+      }
+      20% {
+        
+		background-color: #1B4F72; /* Green */
+      }
+      30% {
+        
+		background-color: #7B241C; /* Green */
+      }
+      40% {
+        
+		background-color: darkgreen; /* Green */
+      }
+      50% {
+        
+		background-color: #1B4F72; /* Green */
+      }
+      70% {
+        
+		background-color: #5B2C6F; /* Green */
+      }
+      80% {
+        
+		background-color: #7B241C; /* Green */
+      }
+      100% {
+        
+		background-color: #1B2631; /* Green */
+      }
+    }
+
+.button-live:hover {
+  background-color: #145A32; /* Green */
+  color: white;
+}
+
+.button-live span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-live span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-live:hover span {
+  padding-right: 25px;
+}
+
+.button-live:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 .btn-primary:hover {
   color: #fff;
 }
