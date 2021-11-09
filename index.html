@@ -27,7 +27,7 @@
 
     <!-- Template JS Files -->
     <script src="js/modernizr.js"></script>
-    <link rel="manifest" href="prism.webmanifest">
+    <link rel="manifest" href="manifest.json">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7LE4E6NDYC"></script>
@@ -38,12 +38,7 @@
 
   gtag('config', 'G-7LE4E6NDYC');
 </script>
-	<script>
-if ("serviceWorker" in navigator) {
-  // register service worker
-  navigator.serviceWorker.register("service-worker.js");
-}
-	</script>
+
 </head>
 
 <body>
@@ -643,13 +638,14 @@ if ("serviceWorker" in navigator) {
 
     </div>
     <!-- Wrapper Ends -->
+		
 <!-- register service worker -->
         <script>
           if ('serviceWorker' in navigator)
           {
           window.addEventListener('load', function() {
             navigator.serviceWorker.register('service-worker.js')
-            .then(function() { console.log("Service Worker Registered, Cheers!"); });
+            .then(function() { console.log("Service Worker Registered, Cheers to PWA Fire!"); });
           }
           );
         }
