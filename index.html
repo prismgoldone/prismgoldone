@@ -26,6 +26,7 @@
 
     <!-- Template JS Files -->
     <script src="js/modernizr.js"></script>
+    <link rel="manifest" href="manifest.json">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7LE4E6NDYC"></script>
@@ -636,6 +637,19 @@
 
     </div>
     <!-- Wrapper Ends -->
+<!-- register service worker -->
+        <script>
+          if ('serviceWorker' in navigator)
+          {
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('service-worker.js')
+            .then(function() { console.log("Service Worker Registered, Cheers!"); });
+          }
+          );
+        }
+        </script>
+ <!-- end of service worker -->
+		
 </body>
 
 </html>
