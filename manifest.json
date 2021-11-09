@@ -4,8 +4,8 @@
   "orientation":"portrait",
   "theme_color": "#fff",
   "short_name": "Prism Gold One",
-  "name": "CryptoBot",
-  "description": "Cryptocurrency Investing Bot",
+  "name": "Crypto Trading Bot",
+  "description": "Make Smart Investments",
   "lang": "en-US",
   "icons": [
     {
@@ -45,8 +45,8 @@
     }
   ],
   "start_url": "/",
-  "background_color": "#C28B23",
+  "background_color": "#3367D6",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#C28B23"
+  "theme_color": "#3367D6"
 }
