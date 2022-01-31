@@ -5102,7 +5102,8 @@ h4.panel-title a.collapsed:before {
   }
 
   .team-members > div {
-    width: 100%;
+    width: 60%;
+	left: 21%;
   }
 
   .team-member {
